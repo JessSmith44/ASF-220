@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=mycapstoneapp
+POSTGRES_USER=JuwmXuqDwFOiFtXZYLYvEuRfbbVbUxxh
+POSTGRES_PASSWORD=WLToOrRBBgyc7UuIhoBib79QVJnkFTOi2kD7vNiLbYCT0QySVn0zlAKkpptIyfvj

@@ -12,8 +12,19 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+import environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+
+env = environ.Env()
+
+READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
+if READ_DOT_ENV_FILE:
+    # OS environment variables take precedence over variables from .env
+    env.read_env(str(BASE_DIR / ".env"))
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -24,8 +35,9 @@ SECRET_KEY = 'django-insecure-13#b6v)ftv+7aisqks1ilo-de63p!*zza^1c3g38*vmsy9-x8y
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
 
 
 # Application definition
@@ -74,12 +86,8 @@ WSGI_APPLICATION = 'web_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES = {"default": env.db("DATABASE_URL")}
+DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
 
 # Password validation

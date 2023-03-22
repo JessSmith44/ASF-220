@@ -42,6 +42,10 @@ h1{
 .logo{
     animation: slideInFromTop 1s ease-in;
 }
+.fb{
+    width: 25px;
+    height: 25px;
+}
 .welcome{
     margin: 10px 0;
     grid-column: 2/3;
