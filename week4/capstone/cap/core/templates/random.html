@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/random.css">
+    <title>Joke Page</title>
+</head>
+<body>
+    <header class="navbar"> 
+        <div class="container flex">
+            <h1 class="logo">Random</h1>
+            <nav>
+                <ul class="linkButtons">
+                    <li><a href="home.html"> Home </a></li>
+                    <li> <a href="gallery.html"> Gallery </a></li>
+                    <li><a href="about.html"> About </a></li>
+                    <li><a href="random.html"> Random </a></li>
+                    <li><a href="{% url 'admin:index' %}"></a>Admin Login</a></li>
+                    <a href="https://www.facebook.com/groups/884082229441073"><img class="fb" src="../static/images/facebook.png"></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container1">
+        <div class="joke">
+            <p>When does a joke become a dad joke??</p>
+            <p class="punch-line">When it becomes a parent!!!</p>
+        </div>
+        <div class="joke">
+            <p>What did the police officer say to the belly button?</p>
+            <p class="punch-line">You're under a vest!</p>
+        </div>
+        <div class="joke">
+            <p>What did the slow tomato say to the others?</p>
+            <p class="punch-line">Don't worry! I'll ketchup.</p>
+        </div>
+    </div>
+    <div id="container2">
+        <div class="joke">
+            <p>How does Darth Vader like his toast?</p>
+            <p class="punch-line">On the dark side!</p>
+        </div>
+        <div class="joke">
+            <p>Why do melons have weddings?</p>
+            <p class="punch-line">Because they cantaloupe!</p>
+        </div>
+        <div class="joke">
+            <p>What did the fisherman say to the magician?</p>
+            <p class="punch-line">Pick a cod, any cod!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/styles.css">
+        <title>Imperfections</title>
+    </head>
+    <body>
+        <body>
+            <header class="navbar"> 
+                <div class="container flex">
+                    <h1 class="logo"> Imperfections</h1> 
+                    <nav>
+                        <ul class="linkButtons">
+                            <li><a href="home.html"> Home </a></li>
+                            <li><a href="gallery.html"> Gallery </a></li>
+                            <li><a href="about.html"> About </a></li>
+                            <!-- <li><a href="sign_in.html"> Sign in </a></li> -->
+                            <li><a href="random.html"> Random </a></li>
+                            <li><a href="{% url 'admin:index' %}"></a>Admin Login</a></li>
+                            <a href="https://www.facebook.com/groups/884082229441073"><img class="fb" src="../static/images/facebook.png"></a>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        
+            <section class="showcase">
+                <div class="container grid">
+                    <img class= "picture1" src="../static/images/frogPrince.jpg" alt="Ragdoll style frog with a crown and a pocket">
+                    <div class="showcase-text">
+                        <h1 class="header2"> Welcome to my crochet and crafting page</h1>
+                        <p class="welcome">  
+                            On this crafting page, we mainly do crochet products but you will see many other crafts along the way!
+                            Please enjoy the selection of items available, and keep an eye out for polls and what items are coming next
+                            This is one of my favorite items to make, this turtle just looks like warm weather!
+                        </p>
+                    </div>
+        
+                    <div class="form-card">
+                        <h2>Join our community, participate in polls and recieve discounts!</h2>
+                        <form> 
+                            <div class="form-control">
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <div class="form-control">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-control">
+                                <input type="text" name="password" placeholder="password" required>
+                            </div>
+                            <input type="submit" value="Sign up" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </section>  
+        
+            <main class="myContent">
+                <div class="container">
+                    <div class="grid-3 text-center my-4">
+                        <img src="/static/images/sunflowerTurtle1.jpg" alt="Turtle with a sunflower shell" width="200px" height="200px" id="image1">
+                        <img src="/static/images/sunflowerTurtle2.jpg" alt="Turtle with a sunflower shell" width="200px" height="200px" id="image2">
+                    </div>
+                </div>
+            </main> 
+
+        <footer>
+            All photographs on this page are property of Jessica Smith. All patterns shared are of my own making unless otherwise stated and linked.<br> Happy crafting! <a> http://127.0.0.1:5500/home.html</a>  &copy; Copyright 2021 Jessica S.
+        </footer>
+    </body>
+    </html>
+

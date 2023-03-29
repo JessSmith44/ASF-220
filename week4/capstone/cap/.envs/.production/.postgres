@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=core2_0
+POSTGRES_USER=bBUgrOUHxiKcJnxaHuRQEfZOvsIZrWhK
+POSTGRES_PASSWORD=28iMBwBKVa2twNrnIv4ty8YYWQ97GBEzztZwSXWxtLG7rAhw7GxBgGLsssg5WfES

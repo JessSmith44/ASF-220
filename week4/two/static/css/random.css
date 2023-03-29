@@ -1,0 +1,105 @@
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.fb{
+    width: 25px;
+    height: 25px;
+}
+.navbar{
+    color: midnightblue;
+    height: 80px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: 2px rgb(0, 0, 0) solid;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#container1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+}
+#container2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.joke{
+    display: block;
+    height: 60px;
+    width: 250px;
+    background-color: rgb(200, 191, 140);
+    padding: 20px;
+    border-radius: 50%;
+    border: 5px;
+    margin: 5px;
+    text-align: center;
+}
+.punch-line{
+    display: none;
+    background-color: rgb(184, 126, 126);
+    padding: 20px;
+    height: 60px;
+    width: 250px;
+}
+.joke:hover .punch-line{
+    display: block;
+    border-radius: 50%;
+    font-family: fantasy;
+}
+@keyframes bgcolor {
+    0% {
+        background-color: lavenderblush
+    }
+
+    30% {
+        background-color: rgb(251, 247, 215)
+    }
+
+    60% {
+        background-color: rgb(103, 237, 230)
+    }
+
+    90% {
+        background-color: rgb(241, 183, 161)
+    }
+
+    100% {
+        background-color: rgb(151, 203, 236)
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+footer{
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+}
